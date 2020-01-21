@@ -17,4 +17,8 @@ Pod::Spec.new do |s|
 
   s.vendored_frameworks='ios/VialerPJSIP.framework'
   s.dependency 'React'
+
+  s.xcconfig = {
+    'GCC_PREPROCESSOR_DEFINITIONS' => 'PJ_AUTOCONF=1',
+	}
 end
